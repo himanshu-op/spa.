@@ -36,16 +36,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@UstaD.on(events.NewMessage(pattern="/ping"))
-@UstaD2.on(events.NewMessage(pattern="/ping"))
-@UstaD3.on(events.NewMessage(pattern="/ping"))
-@UstaD4.on(events.NewMessage(pattern="/ping"))
-@UstaD5.on(events.NewMessage(pattern="/ping"))
-@UstaD6.on(events.NewMessage(pattern="/ping"))
-@UstaD7.on(events.NewMessage(pattern="/ping"))
-@UstaD8.on(events.NewMessage(pattern="/ping"))
-@UstaD9.on(events.NewMessage(pattern="/ping"))
-@UstaD10.on(events.NewMessage(pattern="/ping"))
+@UstaD.on(events.NewMessage(pattern=".ping"))
+@UstaD2.on(events.NewMessage(pattern=".ping"))
+@UstaD3.on(events.NewMessage(pattern=".ping"))
+@UstaD4.on(events.NewMessage(pattern=".ping"))
+@UstaD5.on(events.NewMessage(pattern=".ping"))
+@UstaD6.on(events.NewMessage(pattern=".ping"))
+@UstaD7.on(events.NewMessage(pattern=".ping"))
+@UstaD8.on(events.NewMessage(pattern=".ping"))
+@UstaD9.on(events.NewMessage(pattern=".ping"))
+@UstaD10.on(events.NewMessage(pattern=".ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
