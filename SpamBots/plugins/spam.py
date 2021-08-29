@@ -27,16 +27,16 @@ for x in SUDO_USERS:
 
 
 
-@UstaD.on(events.NewMessage(pattern="/spam"))
-@UstaD2.on(events.NewMessage(pattern="/spam"))
-@UstaD3.on(events.NewMessage(pattern="/spam"))
-@UstaD4.on(events.NewMessage(pattern="/spam"))
-@UstaD5.on(events.NewMessage(pattern="/spam"))
-@UstaD6.on(events.NewMessage(pattern="/spam"))
-@UstaD7.on(events.NewMessage(pattern="/spam"))
-@UstaD8.on(events.NewMessage(pattern="/spam"))
-@UstaD9.on(events.NewMessage(pattern="/spam"))
-@UstaD10.on(events.NewMessage(pattern="/spam"))
+@UstaD.on(events.NewMessage(pattern=".spam"))
+@UstaD2.on(events.NewMessage(pattern=".spam"))
+@UstaD3.on(events.NewMessage(pattern=".spam"))
+@UstaD4.on(events.NewMessage(pattern=".spam"))
+@UstaD5.on(events.NewMessage(pattern=".spam"))
+@UstaD6.on(events.NewMessage(pattern=".spam"))
+@UstaD7.on(events.NewMessage(pattern=".spam"))
+@UstaD8.on(events.NewMessage(pattern=".spam"))
+@UstaD9.on(events.NewMessage(pattern=".spam"))
+@UstaD10.on(events.NewMessage(pattern=".spam"))
 async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
