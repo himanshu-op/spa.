@@ -16,16 +16,16 @@ que = {}
 
 
 
-@UstaD.on(events.NewMessage(pattern="/raid"))
-@UstaD2.on(events.NewMessage(pattern="/raid"))
-@UstaD3.on(events.NewMessage(pattern="/raid"))
-@UstaD4.on(events.NewMessage(pattern="/raid"))
-@UstaD5.on(events.NewMessage(pattern="/raid"))
-@UstaD6.on(events.NewMessage(pattern="/raid"))
-@UstaD7.on(events.NewMessage(pattern="/raid"))
-@UstaD8.on(events.NewMessage(pattern="/raid"))
-@UstaD9.on(events.NewMessage(pattern="/raid"))
-@UstaD10.on(events.NewMessage(pattern="/raid"))
+@UstaD.on(events.NewMessage(pattern=".raid"))
+@UstaD2.on(events.NewMessage(pattern=".raid"))
+@UstaD3.on(events.NewMessage(pattern=".raid"))
+@UstaD4.on(events.NewMessage(pattern=".raid"))
+@UstaD5.on(events.NewMessage(pattern=".raid"))
+@UstaD6.on(events.NewMessage(pattern=".raid"))
+@UstaD7.on(events.NewMessage(pattern=".raid"))
+@UstaD8.on(events.NewMessage(pattern=".raid"))
+@UstaD9.on(events.NewMessage(pattern=".raid"))
+@UstaD10.on(events.NewMessage(pattern=".raid"))
 async def spam(e):  
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
